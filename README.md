@@ -1,5 +1,5 @@
 # Multi-Agent C Code Parallelizer
-
+![System Architecture](./graphs%20and%20diagrams/Agentic%20Parallelizer.png)
 This project implements a **local multi-agent system in Python** to automatically parallelize C programs using **OpenMP** or **MPI**. Each agent in the system is a component powered by an **LLM** (Groq API) to analyze, transform, and improve the code iteratively until compilation succeeds.
 
 ## Project Structure
@@ -25,6 +25,8 @@ paragineers/
 ```
 
 ## Features
+
+![Speedup Comparison](./graphs%20and%20diagrams/SU_EL.png)
 
 * 🔁 Modular agents: orchestrator, OMP expert, MPI expert, and checker.
 * 💬 LLM-based code transformation using Groq's `llama3-8b-8192` model.
