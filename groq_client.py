@@ -4,7 +4,7 @@ from langchain_groq import ChatGroq
 from config import Config
 from utils import Logger, LogColors 
 
-load_dotenv()
+load_dotenv(override=True)
 
 AGENT_NAME = "GroqClient"
 
@@ -14,7 +14,6 @@ try:
         temperature=Config.TEMP,
         max_tokens=Config.MAX_TOKENS,
         max_retries=Config.MAX_RETRIES,
-        # api_key = secret_from_env("GROQ_API_KEY", default=None),
     )
     Logger.success(f"Successfully initialized Groq LLM with model: {Config.MODEL_NAME}", AGENT_NAME)
 except Exception as e:
