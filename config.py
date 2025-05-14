@@ -1,6 +1,6 @@
 class Config:
     """Static configuration settings."""
-    MODEL_NAME = "llama-3.1-8b-instant"  # Or "llama3-8b-8192" as per README
+    MODEL_NAME = "llama-3.3-70b-versatile"  
     MAX_RETRIES = 3
     TEMP = 0.1  
     MAX_TOKENS = 2048 
