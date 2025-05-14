@@ -1,0 +1,11 @@
+{
+  "agent_id": "orchestrator",
+  "context_id": "run-20250514-001",
+  "payload": {
+    "code": "int main() { ... }"
+  },
+  "metadata": {
+    "use_openmp": true,
+    "retry": 0
+  }
+}
